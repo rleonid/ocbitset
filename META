@@ -1,0 +1,8 @@
+version = "0.1"
+description = "Bindings to Daniel Lemire's simple C bitset library."
+requires = "bytes ctypes.stubs"
+archive(byte) = "ocbitset.cma"
+archive(byte, plugin) = "ocbitset.cma"
+archive(native) = "ocbitset.cmxa"
+archive(native, plugin) = "ocbitset.cmxs"
+exists_if = "ocbitset.cma"

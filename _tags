@@ -1,0 +1,3 @@
+true: debug, annot, bin_annot
+<**/test.{byte,native}> : use_cbitset_stubs
+<**/ocbitset.cm{x,}a> : use_cbitset_stubs

@@ -1,0 +1,3 @@
+[submodule "src/lib/cbitset"]
+	path = src/lib/cbitset
+	url = https://github.com/rleonid/cbitset

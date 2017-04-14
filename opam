@@ -1,0 +1,18 @@
+opam-version: "1.2"
+name: "ocbitset"
+version: "0.1"
+maintainer: "Leonid Rozenberg <leonidr@gmail.com>"
+authors: "Leonid Rozenberg <leonidr@gmail.com>"
+homepage: "https://github.com/rleonid/ocbitset"
+bug-reports: "https://github.com/rleonid/ocbitset/issues"
+license: "BSD 3"
+dev-repo: "https://github.com/rleonid/ocbitset.git"
+build: [make]
+install: [make "install"]
+remove: ["ocamlfind" "remove" "ocbitset"]
+depends: [
+  "ocamlfind" {build}
+  "ocamlbuild" {build}
+  "ctypes" { >= "0.11.3" }
+  "ctypes-foreign" { >= "0.4.0" }
+  ]
