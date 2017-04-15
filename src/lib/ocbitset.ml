@@ -36,7 +36,7 @@ let get t i =
     C.get !t (Unsigned.Size_t.of_int i)
  
 let union t1 t2 =
-  in_ref (C.union_copy !t1 !t2)
+  in_ref (C.union !t1 !t2)
   (*
   let c = in_ref (C.copy !t1) in
   ignore (C.inplace_union !c !t2); (* TODO: Do not ignore *)

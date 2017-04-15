@@ -33,7 +33,7 @@ module C(F: Cstubs.FOREIGN) = struct
   let maximum   = F.(foreign "bitset_maximum" (pbts @-> returning size_t))
 
   let inplace_union   = F.(foreign "bitset_inplace_union" (pbts @-> pbts @-> returning bool))
-  let union_copy      = F.(foreign "bitset_union_copy" (pbts @-> pbts @-> returning pbts))
+  let union           = F.(foreign "bitset_union" (pbts @-> pbts @-> returning pbts))
   let union_count     = F.(foreign "bitset_union_count" (pbts @-> pbts @-> returning size_t))
 
   let inplace_intersection   = F.(foreign "bitset_inplace_intersection" (pbts @-> pbts @-> returning void))
